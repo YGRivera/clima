@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name = "viemport" content="width=device-width, initial-scale=1.0"/>
+    <title>Buscador de Clima</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body>
+
+    <h1 class="title">°°°Buscador de Clima°°°</h1>
+    <div class="container">
+        <!-- Formulario de clima -->
+         <form class="form" method="post">
+
+    <div class="field">
+        <label for="city">Ciudad</label>
+        <input id="city" name="city" type="text" 
+            placeholder="Ciudad"/>
+    </div>
+
+    <div class="field">
+        <label for="country">País</label>
+        <select id="country" name="country">
+            <option value="">-- Seleccione un país --</option>
+            <option value="US">Estados Unidos</option>
+            <option value="MX">México</option>
+            <option value="AR">Argentina </option>
+            <option value="CO"> Colombia</option>
+            <option value="ES">España</option>
+            <option value="CS">Corea del Sur</option>
+            
+        </select>
+    </div>
+    <input class="submit" type="submit" value="Consultar Clima"/>
+    </form>
+    <!-- Detalles del clima -->
+     <div class="weather-card">
+        <h2>Clima de Ciudad de Ejemplo</h2>
+        <p class="current"> 25°C</p>
+        <div class="temperatures">
+            <p>Min:<span> 18°C</span></p>
+            <p>Max:<span> 28°C</span></p>
+        </div>
+     </div>
+     </div>
+</body>
+</html>
